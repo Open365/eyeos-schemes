@@ -1,6 +1,6 @@
 {
   "name": "eyeos-schemes",
-  "version": "0.0.50",
+  "version": "0.0.51",
   "description": "Resolver for eyeos schemes like 'home://' or 'workgroup://'",
   "installationPath": "/usr/share/nginx/html/eyeos-schemes",
   "author": "eyeOS",
