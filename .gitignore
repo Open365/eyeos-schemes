@@ -1,0 +1,9 @@
+node_modules/
+*.log
+.*.swp
+*~
+commit.properties
+.idea/
+build/
+build-browser/
+pkgs/

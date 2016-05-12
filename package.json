@@ -1,0 +1,34 @@
+{
+  "name": "eyeos-schemes",
+  "version": "0.0.50",
+  "description": "Resolver for eyeos schemes like 'home://' or 'workgroup://'",
+  "installationPath": "/usr/share/nginx/html/eyeos-schemes",
+  "author": "eyeOS",
+  "homepage": "http://www.eyeos.com/",
+  "main": "src/index.js",
+  "dependencies": {
+    "requirejs": "2.1.15",
+    "grunt-contrib-requirejs": "0.4.4"
+  },
+  "devDependencies": {
+    "eyeos-gruntfile": "*",
+    "chai": "1.10.0",
+    "grunt": "0.4.5",
+    "grunt-mocha-test": "0.12.6",
+    "grunt-shell": "1.1.1",
+    "mocha": "2.1.0",
+    "sinon": "1.12.2"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "keywords": [
+    "eyeos",
+    "scheme",
+    "resolver",
+    "home",
+    "workgroup",
+    "print"
+  ],
+  "license": "AGPL-3.0"
+}
