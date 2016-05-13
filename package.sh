@@ -1,8 +1,25 @@
-#!/bin/bash
+#!/bin/sh
+
 set -e
 set -u
+set -x
 
-cd "$(dirname "$0")"
+BUILDDIR="./build-browser"
+PKGDIR="pkgs"
 
-./package-server.sh
-./package-browser.sh
+bower --allow-root install
+
+if [ -d "$BUILDDIR" ]; then
+    rm -rf $BUILDDIR
+fi
+
+if [ -d "$PKGDIR" ]; then
+    rm -rf $PKGDIR
+fi
+
+mkdir $PKGDIR
+mkdir $BUILDDIR
+
+grunt build-client --release
+
+tar -czvf pkgs/eyeosScheme.tar.gz $BUILDDIR bower.json
