@@ -4,4 +4,3 @@ set -u
 set -x
 
 npm install
-grunt commit-stage
