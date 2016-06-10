@@ -1,6 +1,6 @@
 {
   "name": "eyeos-schemes",
-  "version": "0.0.54",
+  "version": "0.0.55",
   "description": "Resolver for eyeos schemes like 'home://' or 'workgroup://'",
   "author": "eyeOS",
   "homepage": "http://www.eyeos.com/",
